@@ -12,19 +12,19 @@ $bb-white: #FFFFFF;
 
 @font-face {
   font-family: "Palanquin";
-  src:url(".../fonts/Palanquin-Regular.ttf");
+  src:url("/fonts/Palanquin-Regular.ttf");
 }
 
 body {
   // Overwrite default browser stlyes
   margin: 0px;
+  font-size: 16px;
 }
 
 // Scroll Down intro section
 .intro {
   height: 100vh;
   background: $bb-orange;
-  margin-bottom: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,8 +35,27 @@ body {
   }
 }
 
-.step {
-  text-align: center;
+.how-it-works {
+  margin: 50px 0px;
+
+  .step {
+    text-align: center;
+
+    &__header {
+      font-family: 'CooperHewitt';
+      line-height: 1.5;
+      color: $bb-blue;
+      font-size: 1em;
+      margin-top: 0px;
+      margin-bottom: 10px;
+    }
+
+    &__description {
+      font-family: 'Palanquin';
+      color: $bb-blue;
+      font-size: 1em;
+    }
+  }
 }
 
 .svg-wrapper {

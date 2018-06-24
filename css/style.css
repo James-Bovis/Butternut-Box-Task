@@ -5,15 +5,15 @@
 
 @font-face {
   font-family: "Palanquin";
-  src: url(".../fonts/Palanquin-Regular.ttf"); }
+  src: url("/fonts/Palanquin-Regular.ttf"); }
 
 body {
-  margin: 0px; }
+  margin: 0px;
+  font-size: 16px; }
 
 .intro {
   height: 100vh;
   background: #E56B54;
-  margin-bottom: 30px;
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -21,8 +21,21 @@ body {
     font-family: 'CooperHewitt';
     color: #FFFFFF; }
 
-.step {
-  text-align: center; }
+.how-it-works {
+  margin: 50px 0px; }
+  .how-it-works .step {
+    text-align: center; }
+    .how-it-works .step__header {
+      font-family: 'CooperHewitt';
+      line-height: 1.5;
+      color: #1D6C93;
+      font-size: 1em;
+      margin-top: 0px;
+      margin-bottom: 10px; }
+    .how-it-works .step__description {
+      font-family: 'Palanquin';
+      color: #1D6C93;
+      font-size: 1em; }
 
 .svg-wrapper {
   position: relative;
