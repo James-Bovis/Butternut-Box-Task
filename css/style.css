@@ -1,13 +1,28 @@
+@font-face {
+  font-family: "CooperHewitt";
+  font-weight: bold;
+  src: url("/fonts/CooperHewitt-Bold.otf") format("opentype"); }
+
+@font-face {
+  font-family: "Palanquin";
+  src: url(".../fonts/Palanquin-Regular.ttf"); }
+
 body {
   margin: 0px; }
 
-.step {
-  text-align: center; }
-
 .intro {
   height: 100vh;
-  background: red;
-  margin-bottom: 30px; }
+  background: #E56B54;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .intro h1 {
+    font-family: 'CooperHewitt';
+    color: white; }
+
+.step {
+  text-align: center; }
 
 .svg-wrapper {
   position: relative;
