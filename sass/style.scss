@@ -1,0 +1,38 @@
+body {
+  margin: 0px
+}
+
+.step {
+  text-align: center;
+}
+
+.intro {
+  height: 100vh;
+  background: red;
+  margin-bottom: 30px;
+}
+
+.svg-wrapper {
+  position: relative;
+  margin: auto;
+  width: 120px;
+  height: 120px;
+}
+
+.svg-wrapper img {
+  position: absolute;
+  width: 100%;
+  left: 0px;
+}
+
+.image-2 {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  transition-delay: .5s;
+}
+
+.image-2.coloured {
+  opacity: 1;
+  top: -5px;
+  left: 1px;
+}
