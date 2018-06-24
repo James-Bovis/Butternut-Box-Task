@@ -35,6 +35,11 @@ body {
         width: 100%;
         position: absolute;
         left: 0px; }
+      .how-it-works .step__img__wrapper .in-colour {
+        opacity: 0;
+        transition: opacity 0.5s ease; }
+      .how-it-works .step__img__wrapper .coloured {
+        opacity: 1; }
     .how-it-works .step__header {
       font-family: 'CooperHewitt';
       line-height: 1.5;

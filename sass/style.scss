@@ -53,6 +53,18 @@ body {
         position: absolute;
         left: 0px;
       }
+      
+      // Set the colour version to
+      // hide at first
+      .in-colour {
+        opacity: 0;
+        transition: opacity 0.5s ease;
+      }
+      
+      // When class is added, show the coloured version
+      .coloured {
+        opacity: 1;
+      }
     }
 
     &__header {
