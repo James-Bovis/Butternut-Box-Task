@@ -22,9 +22,10 @@ body {
     color: #FFFFFF; }
 
 .how-it-works {
-  margin: 50px 0px; }
+  margin: 30px 0px; }
   .how-it-works .step {
-    text-align: center; }
+    text-align: center;
+    margin: 30px 0px; }
     .how-it-works .step__img__wrapper {
       width: 100px;
       height: 100px;
