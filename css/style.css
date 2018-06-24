@@ -12,7 +12,7 @@ body {
   font-size: 16px; }
 
 .intro {
-  height: 100vh;
+  height: 100%;
   background: #E56B54;
   display: flex;
   align-items: center;
