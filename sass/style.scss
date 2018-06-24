@@ -41,6 +41,16 @@ body {
   .step {
     text-align: center;
 
+    &__img__wrapper {
+      width: 100px;
+      position: relative;
+      margin: auto;
+
+      img {
+        width: 100%;
+      }
+    }
+
     &__header {
       font-family: 'CooperHewitt';
       line-height: 1.5;

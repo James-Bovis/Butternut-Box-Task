@@ -25,6 +25,12 @@ body {
   margin: 50px 0px; }
   .how-it-works .step {
     text-align: center; }
+    .how-it-works .step__img__wrapper {
+      width: 100px;
+      position: relative;
+      margin: auto; }
+      .how-it-works .step__img__wrapper img {
+        width: 100%; }
     .how-it-works .step__header {
       font-family: 'CooperHewitt';
       line-height: 1.5;
