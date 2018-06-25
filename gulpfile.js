@@ -5,6 +5,7 @@ var runSequence = require('run-sequence');
 var del = require('del');
 var cache = require('gulp-cache');
 var imagemin = require('gulp-imagemin');
+var autoprefixer = require('gulp-autoprefixer');
 
 // Runs browsersync on src folder
 gulp.task('browserSync', function() {
@@ -19,7 +20,12 @@ gulp.task('browserSync', function() {
 gulp.task('sass', function(){
   return gulp.src('sass/style.scss')
     .pipe(sass())
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions'],
+      cascade: false
+    }))
     .pipe(gulp.dest('css/'))
+
     .pipe(browserSync.reload({
       stream: true
     }))
