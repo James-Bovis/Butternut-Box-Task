@@ -60,7 +60,17 @@
   
   <!-- Load in WOW.js -->
   <script src="js/WOW.min.js"></script>
-  <script src="js/loadOnScroll.js"></script>
+  <!-- Set WOW.js variables -->
+  <script>
+    var wow = new WOW(
+      {
+        boxClass: 'colour-img', // which element will be animated
+        animateClass: 'coloured', // class that is added when element is in view
+        offset: 250 // distance to the element
+      }
+    );
+    wow.init();
+  </script>
   </script>
 </body>
 </html>
