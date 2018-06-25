@@ -64,9 +64,10 @@ body {
       // When class is added, show the coloured version
       .coloured {
         opacity: 1;
+        transition-delay: 0s;
       }
     }
-
+    
     &__header {
       font-family: 'CooperHewitt';
       line-height: 1.5;
@@ -80,30 +81,14 @@ body {
       color: $bb-blue;
       font-size: 1em;
     }
+
+    // Looks at all .coloured images in steps 1 to 4
+    // and adds a transition-delay that is times by 0.5 sec
+    // Eg. loads step 1 > step 2 > step 3 > step 4
+    @for $i from 4 to 1 {
+      &:nth-child(#{$i}) .coloured {
+        transition-delay: $i * 0.5s;
+      }
+    }
   }
-}
-
-.svg-wrapper {
-  position: relative;
-  margin: auto;
-  width: 120px;
-  height: 120px;
-}
-
-.svg-wrapper img {
-  position: absolute;
-  width: 100%;
-  left: 0px;
-}
-
-.image-2 {
-  opacity: 0;
-  transition: opacity 0.5s ease;
-  transition-delay: .5s;
-}
-
-.image-2.coloured {
-  opacity: 1;
-  top: -5px;
-  left: 1px;
 }
