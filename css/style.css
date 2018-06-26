@@ -1,11 +1,11 @@
 @font-face {
   font-family: "CooperHewitt";
   font-weight: bold;
-  src: url("/fonts/CooperHewitt-Bold.otf") format("opentype"); }
+  src: url("/fonts/CooperHewitt-Bold.woff") format("woff"); }
 
 @font-face {
   font-family: "Palanquin";
-  src: url("/fonts/Palanquin-Regular.ttf"); }
+  src: url("/fonts/Palanquin-Regular.woff") format("woff"); }
 
 body {
   margin: 0px;
