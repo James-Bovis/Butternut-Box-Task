@@ -1,21 +1,21 @@
 {
-  "name": "gulp-project-workflow",
+  "name": "Butternut-Box-Task",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "An interview task for Butternut Box",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/James-Bovis/gulp-project-workflow.git"
+    "url": "git+https://github.com/James-Bovis/Butternut-Box-Task"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/James-Bovis/gulp-project-workflow/issues"
+    "url": "https://github.com/James-Bovis/Butternut-Box-Task"
   },
-  "homepage": "https://github.com/James-Bovis/gulp-project-workflow#readme",
+  "homepage": "http://butternutbox.jamesbovis.com/",
   "devDependencies": {
     "browser-sync": "^2.24.4",
     "del": "^3.0.0",
