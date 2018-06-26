@@ -41,6 +41,13 @@ body {
 .how-it-works {
   margin: 30px 0px;
 
+  h1 {
+    font-family: 'CooperHewitt', $font-fallback;
+    color: $bb-blue;
+    text-align: center;
+    font-size: 1.75em;
+  }
+
   .step {
     text-align: center;
     margin: 30px 0px;
