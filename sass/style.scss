@@ -15,6 +15,9 @@ $bb-white: #FFFFFF;
   src:url("/fonts/Palanquin-Regular.ttf");
 }
 
+// Set fall back fonts
+$font-fallback: 'Helvetica Neue', 'Helvetica', 'sans-serif';
+
 body {
   // Overwrite default browser stlyes
   margin: 0px;
@@ -30,7 +33,7 @@ body {
   justify-content: center;
   
   h1 {
-    font-family: 'CooperHewitt';
+    font-family: 'CooperHewitt', $font-fallback;
     color: $bb-white;
   }
 }
@@ -69,7 +72,7 @@ body {
     }
     
     &__header {
-      font-family: 'CooperHewitt';
+      font-family: 'CooperHewitt', $font-fallback;
       line-height: 1.5;
       color: $bb-blue;
       font-size: 1em;
@@ -77,7 +80,7 @@ body {
     }
 
     &__description {
-      font-family: 'Palanquin';
+      font-family: 'Palanquin', $font-fallback;
       color: $bb-blue;
       font-size: 1em;
     }

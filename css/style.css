@@ -24,7 +24,7 @@ body {
   -ms-flex-pack: center;
   justify-content: center; }
   .intro h1 {
-    font-family: 'CooperHewitt';
+    font-family: "CooperHewitt", "Helvetica Neue", "Helvetica", "sans-serif";
     color: #FFFFFF; }
 
 .how-it-works {
@@ -50,13 +50,13 @@ body {
         -webkit-transition-delay: 0s;
         transition-delay: 0s; }
     .how-it-works .step__header {
-      font-family: 'CooperHewitt';
+      font-family: "CooperHewitt", "Helvetica Neue", "Helvetica", "sans-serif";
       line-height: 1.5;
       color: #1D6C93;
       font-size: 1em;
       margin-bottom: 10px; }
     .how-it-works .step__description {
-      font-family: 'Palanquin';
+      font-family: "Palanquin", "Helvetica Neue", "Helvetica", "sans-serif";
       color: #1D6C93;
       font-size: 1em; }
     .how-it-works .step:nth-child(4) .coloured {
