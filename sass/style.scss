@@ -24,8 +24,8 @@ body {
   font-size: 16px;
 }
 
-// Scroll Down intro section
-.intro {
+// Scroll sections
+.scroll-down {
   height: 100%;
   background: $bb-orange;
   display: flex;
@@ -38,6 +38,12 @@ body {
   }
 }
 
+.scroll-up {
+  @extend .scroll-down;
+  background: $bb-blue;
+}
+
+// How it works section
 .how-it-works {
   margin: 30px 0px;
 
@@ -51,6 +57,13 @@ body {
   .step {
     text-align: center;
     margin: 30px 0px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+
+    &.fade-in {
+      opacity: 1;
+      trasition-delay: 0s;
+    }
 
     &__img__wrapper {
       width: 100px;
@@ -74,7 +87,6 @@ body {
       // When class is added, show the coloured version
       .coloured {
         opacity: 1;
-        transition-delay: 0s;
       }
     }
     
@@ -97,7 +109,15 @@ body {
     // Eg. loads step 1 > step 2 > step 3 > step 4
     @for $i from 4 to 1 {
       &:nth-child(#{$i}) .coloured {
-        transition-delay: $i * 0.25s;
+        transition-delay: $i * 0.5s;
+      }
+    }
+
+    // Sets the transition delay for the
+    // fade in of each step
+    @for $i from 1 to 6 {
+      &:nth-child(#{$i}) {
+        transition-delay: $i * 0.1s;
       }
     }
   }

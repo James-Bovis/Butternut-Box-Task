@@ -11,7 +11,7 @@ body {
   margin: 0px;
   font-size: 16px; }
 
-.intro {
+.scroll-down, .scroll-up {
   height: 100%;
   background: #E56B54;
   display: -webkit-box;
@@ -23,9 +23,12 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center; }
-  .intro h1 {
+  .scroll-down h1, .scroll-up h1 {
     font-family: "CooperHewitt", "Helvetica Neue", "Helvetica", "sans-serif";
     color: #FFFFFF; }
+
+.scroll-up {
+  background: #1D6C93; }
 
 .how-it-works {
   margin: 30px 0px; }
@@ -36,7 +39,13 @@ body {
     font-size: 1.75em; }
   .how-it-works .step {
     text-align: center;
-    margin: 30px 0px; }
+    margin: 30px 0px;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease; }
+    .how-it-works .step.fade-in {
+      opacity: 1;
+      trasition-delay: 0s; }
     .how-it-works .step__img__wrapper {
       width: 100px;
       height: 100px;
@@ -51,9 +60,7 @@ body {
         -webkit-transition: opacity 0.5s ease;
         transition: opacity 0.5s ease; }
       .how-it-works .step__img__wrapper .coloured {
-        opacity: 1;
-        -webkit-transition-delay: 0s;
-        transition-delay: 0s; }
+        opacity: 1; }
     .how-it-works .step__header {
       font-family: "CooperHewitt", "Helvetica Neue", "Helvetica", "sans-serif";
       line-height: 1.5;
@@ -65,11 +72,26 @@ body {
       color: #1D6C93;
       font-size: 1em; }
     .how-it-works .step:nth-child(4) .coloured {
+      -webkit-transition-delay: 2s;
+      transition-delay: 2s; }
+    .how-it-works .step:nth-child(3) .coloured {
+      -webkit-transition-delay: 1.5s;
+      transition-delay: 1.5s; }
+    .how-it-works .step:nth-child(2) .coloured {
       -webkit-transition-delay: 1s;
       transition-delay: 1s; }
-    .how-it-works .step:nth-child(3) .coloured {
-      -webkit-transition-delay: 0.75s;
-      transition-delay: 0.75s; }
-    .how-it-works .step:nth-child(2) .coloured {
+    .how-it-works .step:nth-child(1) {
+      -webkit-transition-delay: 0.1s;
+      transition-delay: 0.1s; }
+    .how-it-works .step:nth-child(2) {
+      -webkit-transition-delay: 0.2s;
+      transition-delay: 0.2s; }
+    .how-it-works .step:nth-child(3) {
+      -webkit-transition-delay: 0.3s;
+      transition-delay: 0.3s; }
+    .how-it-works .step:nth-child(4) {
+      -webkit-transition-delay: 0.4s;
+      transition-delay: 0.4s; }
+    .how-it-works .step:nth-child(5) {
       -webkit-transition-delay: 0.5s;
       transition-delay: 0.5s; }

@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-  <!-- Intro section -->
-  <section class="intro">
+  <!-- Scroll down section -->
+  <section class="scroll-down">
     <h1>Scroll Down...</h1>
   </section>
 
@@ -58,16 +58,34 @@
       </div>
     </div>
   </section>
+
+  <!-- Scroll up section -->
+  <section class="scroll-up">
+    <h1>Scroll up...</h1>
+  </section>
   
   <!-- Load in WOW.js -->
   <script src="js/wow.min.js"></script>
   <!-- Set WOW.js variables -->
   <script>
+    // Fade in each step
+    var wow = new WOW(
+      {
+        boxClass: 'step', // which element will be animated
+        animateClass: 'fade-in', // class that is added when element is in view
+        offset: 50 // distance to the element
+      }
+    );
+    wow.init();
+  </script>
+
+  <script>
+    // Show the coloured image when you scroll further
     var wow = new WOW(
       {
         boxClass: 'colour-img', // which element will be animated
         animateClass: 'coloured', // class that is added when element is in view
-        offset: 150 // distance to the element
+        offset: 200 // distance to the element
       }
     );
     wow.init();
